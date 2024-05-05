@@ -43,8 +43,14 @@ This dataset gives us a detailed look into how India's economy and energy usage 
 4.	DATA PREPROCESSING AND EXPLORATORY DATA ANALYSIS:
 
 1.	DESCRIPTIVE STATISTICS:
+
+   ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/4d8b817b-5f29-457b-8a1f-db093f19d4bb)
+
  
-2.	CHECKING FOR NULL VALUES:
+3.	CHECKING FOR NULL VALUES:
+
+   ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/10edbddc-796a-4e98-8224-74ca1e942171)
+
  
 There were 18 null values found in Electricity production from oil sources (% of total), 3 in Oil rents (% of GDP)  and 19 in Fossil fuel energy consumption (% of total).
 
@@ -52,25 +58,42 @@ There were 18 null values found in Electricity production from oil sources (% of
 
 
 3.	FILLING THE NULL VALUES:
+
+   ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/a7c70efc-2841-43c8-ab1a-00a59a3d6b43)
+
  
 We filled the null values using forward and backward fill.
 
 4.	TEST FOR STATIONARITY OF DATA:
 
+   ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/ed0b91c2-faf1-4492-9b91-7c4506fe5855)
+
+
  
 We conducted the Augmented Dickey-Fuller Test on all the variables to check if they are stationary or not, all the variables were non-stationary.
 
-5.	DIFFERENCING TO MAKE DATA STATIONARY: 
+5.	DIFFERENCING TO MAKE DATA STATIONARY:
+
+ ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/42cc9eea-39f5-4c0c-8bbd-1aa39e6d6735)
+
 After taking the third ordered difference the data was stationary.
+
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/26a2d2ec-4871-47a9-aa83-6249066a7c59)
+
  
 
-6.	CORRELATION MATRIX:
+7.	CORRELATION MATRIX:
+
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/7e4dd402-4aec-4614-b9be-d29d25ed50a6)
+
  
 The analysis shows a strong link between a country's GDP and its exports (0.69). Countries that produce more goods and services tend to have larger economies. There's also a connection between oil revenue and fuel imports (0.26), and a weak negative link between exports and reliance on fossil fuels (-0.16).
 
 7.	TESTS FOR MULTICOLLINEARITY:
- 
 
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/2f320cde-7321-4663-9749-6711a809d483)
+
+ 
 GDP (current US$): The VIF value is 4.108, indicating a moderate level of multicollinearity with other predictor variables.
 
 Exports of goods and services (current US$): The VIF value is 4.273, also indicating a moderate level of multicollinearity with other predictor variables.
@@ -86,48 +109,59 @@ Overall, the VIF values for most of the features are low, indicating minimal mul
 
 8.	DISTRIBUTION OF DATA:
 Most of the variables were not normally distributed and showed a trend in \their distribution.
-  
-  
+
+  ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/eb31048d-e703-4295-b7bc-57299467dd71)
+
+  ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/4cd5fe94-887b-413d-b76e-d22bcf516380)
+
+  ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/95626e64-17b1-4cbb-abca-a1239f7b3c8a)
+
+  ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/d4be2ab5-4a92-4c77-9bad-730d5a3b8bed)
+
+  ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/33e65cc3-15de-4e80-916c-30fdd134b06c)
+
+  ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/aec8fc9e-0a29-4444-99cf-f44c7af038b2)
   
 9.	FORMAL TEST FOR NORMALITY:
 Most of the variables were not normally distributed.
+
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/72bdbad6-dddb-4ada-9ce2-0c3279390a5b)
 
  
 
 10.	INTERACTIVE LINE PLOT:
 Interactive Line Plot was made to understand the relationship between variables of choice and plot was designed such that time wise analysis can also be done.
 
- 
- 
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/692acbd1-006c-4ffb-8071-fcfd00e7eafe)
+
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/b1e36098-2036-48aa-8355-f583e7c99bdd)
 
 
 11.	PAIR PLOTS:
 Pair scatter plots were plotted for all variables, which helped us understand how they interact with each other.
  
 
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/ddf7e648-9fe7-4d6d-9a41-6a929652cc46)
 
 
 
 12.	STANDARDIZATION AND NORMALIZATION OF DATA:
 
 The data had to be standardized to get the variables on the same scale and also normalized as it is easier and better for prediction.
- 
+
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/6014101e-fb9c-4176-a5ca-115e334908bb)
+
 
 13.	PRINCIPAL COMPONENT ANALYSIS (PCA):
 
 Principal Component Analysis (PCA) was utilized to reduce the dimensionality of the economic data and extract key features. This technique identifies a smaller set of uncorrelated variables (principal components) that capture the most significant economic patterns. Analyzing these PCs allows for a more concise examination of the interplay between various economic forces.
+
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/d14f19a5-f15c-4555-8add-fba5f8538901)
+
  
 The selection of the optimal number of principal components (PCs) for further analysis was guided by the scree plot. This graphical tool depicts the explained variance captured by each PC in descending order. A scree plot typically exhibits a sharp initial descent followed by a flattening of the curve. The "elbow" formed at this inflection point signifies the point where subsequent PCs contribute minimal additional variance. By retaining PCs preceding this elbow, we ensure that the most informative features of the original data are captured in a reduced dimensionality, facilitating more efficient analysis without compromising the integrity of the underlying economic relationships.
 
-
-
-
-
-
-
-
-
-
+   ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/6f1a77f6-a5df-4a95-9347-4e859d6f4a9c)
 
 
 5.	MODEL BUILDING AND MODEL BUILDING:
@@ -135,43 +169,43 @@ The selection of the optimal number of principal components (PCs) for further an
 a.	 Prediction
 
 In our study on the impact of the petroleum sector on India's GDP, we undertook a comprehensive analysis employing various regression models to understand the relationship between key economic indicators and GDP. Our investigation involved the evaluation of six regression models: Decision Tree, Random Forest, Gradient Boosting Machine (GBM), Support Vector Machine (SVM), K-Nearest Neighbors (KNN), and Linear Regression.
- 
+
+ ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/4ba28e98-4a22-49ed-8fff-91716f6ea005)
+
 
 Hyperparameter Tuning:
 To ensure optimal model performance, we utilized hyperparameter tuning techniques via GridSearchCV. This approach systematically explores a predefined grid of hyperparameters to identify the most suitable configuration for each model. For instance, in Decision Tree, we experimented with different maximum depths, while in Random Forest, we varied the number of estimators. Similarly, for GBM, we adjusted the number of estimators and learning rate, and for SVM, we tuned the regularization parameter (C) and kernel choices. KNN was optimized by varying the number of neighbors. Linear Regression, being a simpler model, does not require hyperparameter tuning.
  
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/8d18c94c-d341-4d0f-a912-364f4ba497ac)
+
 
 Best Estimators and Model Selection:
 Following hyperparameter tuning, we identified the best estimators for each model based on mean squared error (MSE) metrics obtained through cross-validation. Through rigorous evaluation, we determined Linear Regression to be the most suitable model for our analysis.
- 
+
+ ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/6437f2f5-a5fa-4bd6-b295-0f2f7b3d25c6)
+
 
 Justification for the Chosen Model:
 Linear Regression emerged as the optimal choice due to its superior performance across key evaluation metrics. It exhibited low training RMSE and reasonable test RMSE, suggesting its capability to predict GDP accurately. Furthermore, the high R-squared values on both training and test datasets indicate that the model explains a substantial portion of the variance in GDP. Notably, Linear Regression offers interpretability, facilitating a clear understanding of the relationship between economic indicators and GDP.
 
  
-
-
-
-
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/e740ac66-b42f-46d8-ad15-8699cdb8f411)
 
 
 
 GRAPH:
  
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/91067851-6722-4b50-b259-92556fa655b9)
 
 
 b.	Forecasting
 
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/db74ef54-35ce-40e2-84dd-466b22c80e73)
 
 
- 
 GRAPH:
  
-
-
-
-
-
+![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/603f7aa1-54be-4a94-ab53-a5ffec90fece)
 
 
 
@@ -181,7 +215,8 @@ Linear regression:
 
 The Linear Regression model demonstrated strong predictive capability in both training and test datasets. With a training RMSE of 0.0275 and R2 of 0.9642, it effectively captured variations in the training data. Although the test RMSE increased slightly to 0.6659, and the R2 dropped to 0.6850, the model still exhibited significant predictive power on unseen data. These results indicate that while the model's performance slightly degraded on the test set, it remained effective in explaining variability and making accurate predictions.
 
- 
+ ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/7018f4eb-c567-4889-9ce9-611ec0d39fb4)
+
 
 ARIMA Model:
 
