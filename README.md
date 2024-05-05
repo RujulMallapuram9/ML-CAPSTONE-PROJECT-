@@ -187,7 +187,8 @@ ARIMA Model:
 
 The automatic selection process of an ARIMA (AutoRegressive Integrated Moving Average) model, optimizing based on the Akaike Information Criterion (AIC). The chosen ARIMA(4,0,1) model signifies four autoregressive (AR) terms, one moving average (MA) term, and no differencing (d=0). The 'intercept' coefficient represents the constant term. Coefficients for AR and MA terms are provided, alongside their standard errors, z-scores, and p-values. Further, goodness-of-fit metrics such as log likelihood, AIC, and BIC are presented. Diagnostic tests (Ljung-Box and Jarque-Bera) assess residuals for autocorrelation and normality assumptions, respectively.
 
- 
+ ![image](https://github.com/RujulMallapuram9/ML-CAPSTONE-PROJECT-/assets/118895292/d677b554-2ed1-4dba-9b6d-c19c23d986c0)
+
 
 
 PROBLEM STATEMENT SOLUTIONS:
